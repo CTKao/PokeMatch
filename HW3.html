@@ -1,0 +1,48 @@
+﻿<html>
+
+<head>
+	<title>Homework 03</title>
+	<link rel=stylesheet type="text/css" href="HW3.css">
+	<script type="text/javascript" src="HW3.js"></script>
+</head>
+
+<body>
+<font face="微軟正黑體">
+
+<p align="center"><font class="title">記憶遊戲</font></p>
+
+<div id="game" align="center">
+	
+	<input type="button" id="start" class="start" value="START" onClick="status()">
+	
+</div>
+
+<div id="pause"> P A U S E </div>
+
+<div class="explain" align="center">
+	<font class="explain"><p>遊戲尚未開始</p></font>
+	<form>
+		<input type="text" id="column" class="reset" placeholder="行數(預設4行)">
+		<input type="text" id="row" class="reset" placeholder="列數(預設4列)">
+		<input type="text" id="suit" class="reset" placeholder="花色(可空白)">
+		<br><br>
+		<input type="button" id="Status" class="operate" value=" 開 始 " onClick="status()">
+		<input type="button" class="operate" value=" 提 示 " onClick="hint()">
+		<input type="button" class="operate" value=" 設 定 " onClick="set(this.form.row.value,this.form.column.value,this.form.suit.value)">
+	</form>
+	<b><p></p></b>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<img src="pics/character.png" class="explain">
+
+<a href="index.html">
+	<div style="position:fixed; top:10%; right:10px">
+		<img src="pics/home.png" style="height:48px">回首頁
+	</div>
+</a>
+
+</body>
+
+</html>
